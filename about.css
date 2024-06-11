@@ -230,15 +230,16 @@ header {
     font-weight: 500;
     font-size: 24px;
     max-width: 600px;
-    margin: 0px auto;
-
+    margin: 0 auto;
 }
 
 .cv img {
+    display: block;
     max-width: 600px;
     margin: 20px auto;
+    width: 100%;
+    box-sizing: border-box; 
     padding: 20px;
-    width: 600px;
 }
 
 .gallery {
