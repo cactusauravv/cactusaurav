@@ -663,6 +663,10 @@ header {
     margin: 0 auto;
     position: relative;
 }
+.skills-slider h4{
+    font-family: 'PP Neue Montreal Book', sans-serif;
+    font-weight: lighter;
+}
 
 .slider-container {
     display: flex;
