@@ -656,19 +656,28 @@ header {
     padding: 20px;
     color: white;
 }
+
 .skills-slider {
     overflow: hidden;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 20px;
+    margin-bottom: 20px;
+
     position: relative;
 }
-.skills-slider h4{
+
+.skills-slider h4 {
     font-family: 'PP Neue Montreal Book', sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
 }
 
 .slider-container {
+    padding-top: 40px;
     display: flex;
     width: fit-content;
     animation: scroll 20s linear infinite;
@@ -687,6 +696,23 @@ header {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.dark-theme .skill2 img {
+    content: url(inverted_skill2.png);
+}
+
+.dark-theme .skill1 img {
+    content: url(skill1_inverted.png);
+}
+
+.dark-theme .skill3 img {
+    content: url(skill3_inverted.png);
+}
+
+.dark-theme .skill4 img {
+    width: 60px;
+    margin-top: -7.5px;
 }
 
 .skill::before {
@@ -714,10 +740,11 @@ header {
         transform: translateX(0);
     }
 
-  
+
 
     100% {
-        transform: translateX(calc(-120px* 4 )); /* Move back to the starting position */
+        transform: translateX(calc(-120px* 4));
+        /* Move back to the starting position */
     }
 }
 
