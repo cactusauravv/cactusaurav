@@ -659,7 +659,6 @@ header {
 
 .skills-slider {
     overflow: hidden;
-    width: 100%;
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
@@ -673,7 +672,11 @@ header {
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.dark-theme .skills-slider h4 {
+    color: white;
 }
 
 .slider-container {
