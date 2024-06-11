@@ -656,6 +656,66 @@ header {
     padding: 20px;
     color: white;
 }
+.skills-slider {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    width: fit-content;
+    animation: scroll 20s linear infinite;
+}
+
+.skill {
+    position: relative;
+    flex: 0 0 auto;
+    width: 120px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.skill img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.skill::before {
+    content: attr(data-name);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.skill:hover::before {
+    opacity: 1;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+  
+
+    100% {
+        transform: translateX(calc(-120px* 4 )); /* Move back to the starting position */
+    }
+}
 
 #backToTopBtn {
     display: none;

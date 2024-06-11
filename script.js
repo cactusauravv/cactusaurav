@@ -183,3 +183,31 @@ document.querySelectorAll('.contact-links a').forEach(link => {
         });
     });
 });
+// scripts.js
+document.addEventListener('DOMContentLoaded', () => {
+    const sliderContainer = document.getElementById('sliderContainer');
+    const skills = [
+        { name: 'Photoshop', image: 'skill1.png' },
+        { name: 'Davinci', image: 'skill2.png' },
+        { name: 'PremierPro', image: 'skill3.png' },
+        { name: 'Illustration', image: 'skill4.png' }
+    ];
+
+    // Populate slider container with skill elements
+    skills.forEach(skill => {
+        const skillElement = document.createElement('div');
+        skillElement.classList.add('skill');
+        skillElement.dataset.name = skill.name;
+        const imgElement = document.createElement('img');
+        imgElement.src = skill.image;
+        imgElement.alt = skill.name;
+        imgElement.width = 40; // Adjust width as needed
+        skillElement.appendChild(imgElement);
+        sliderContainer.appendChild(skillElement);
+    });
+
+    // Reset animation on animation iteration
+    sliderContainer.addEventListener('animationiteration', () => {
+        sliderContainer.style.animation = 'scroll 10s linear infinite';
+    });
+});
