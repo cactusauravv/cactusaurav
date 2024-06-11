@@ -225,6 +225,22 @@ header {
     opacity: 1;
 }
 
+.cv h2 {
+    font-family: 'PP Neue Montreal Book', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    max-width: 600px;
+    margin: 0px auto;
+
+}
+
+.cv img {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 600px;
+}
+
 .gallery {
     max-width: 600px;
     margin: 20px auto;
