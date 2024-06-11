@@ -332,7 +332,7 @@ header {
 
 
     100% {
-        transform: translateX(calc(-120px* 4));
+        transform: translateX(calc(-120px* 6));
         /* Move back to the starting position */
     }
 }
